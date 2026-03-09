@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tutorial</title>
+    <link href="/src/index.css" rel="stylesheet">
+</head>
+<body>
+
+<!--navbar -->
+<nav class="bg-pink-100 w-full px-8 py-4">
+    <div class="flex flex-wrap items-center justify-between">
+        <a href="https://flowbite.com/ " class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Cookie Art</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+                aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                 fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+            </svg>
+        </button>
+        <!--          this is the section navbar-->
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+                <li>
+                    <a href="index.html"
+                       class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Home</a>
+                </li>
+                <li>
+                    <a href="tutorials.html"
+                       class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Tutorials</a>
+                </li>
+                <li>
+                    <a href="access.html"
+                       class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Get access</a>
+                </li>
+                <li>
+                    <a href="login.html"
+                       class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Log in</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- "I want to add clickable star ratings to my cards but how? -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 container mx-auto p-8">
+
+    <!-- CARD 1 -->
+    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
+        <img src="documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
+        <div class="p-4 text-center">
+            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">CHRISTMAS FLORAL TREE</h3>
+            <div class="flex justify-center gap-1 mb-2">
+                <span class="text-gray-300 text-lg">★★★★★</span>
+            </div>
+            <p class="text-gray-800 font-semibold">€24.95</p>
+        </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
+        <img src="documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
+        <div class="p-4 text-center">
+            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">BRIDE OF SPRING</h3>
+            <div class="flex justify-center gap-1 mb-2">
+                <span class="text-gray-300 text-lg">★★★★★</span>
+            </div>
+            <p class="text-gray-800 font-semibold">€19.99</p>
+        </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
+        <img src="documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
+        <div class="p-4 text-center">
+            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">SPRING COOKIES</h3>
+            <div class="flex justify-center gap-1 mb-2">
+                <span class="text-gray-300 text-lg">★★★★★</span>
+            </div>
+            <p class="text-gray-800 font-semibold">€29.99</p>
+        </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
+        <img src="documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
+        <div class="p-4 text-center">
+            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">COOKIE DOLLS</h3>
+            <div class="flex justify-center gap-1 mb-2">
+                <span class="text-gray-300 text-lg">★★★★★</span>
+            </div>
+            <p class="text-gray-800 font-semibold">€39.99</p>
+        </div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
+        <img src="documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
+        <div class="p-4 text-center">
+            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">SPRING COOKIES</h3>
+            <div class="flex justify-center gap-1 mb-2">
+                <span class="text-gray-300 text-lg">★★★★★</span>
+            </div>
+            <p class="text-gray-800 font-semibold">€29.99</p>
+        </div>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
+        <img src="documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
+        <div class="p-4 text-center">
+            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">SPRING COOKIES</h3>
+            <div class="flex justify-center gap-1 mb-2">
+                <span class="text-gray-300 text-lg">★★★★★</span>
+            </div>
+            <p class="text-gray-800 font-semibold">€29.99</p>
+        </div>
+    </div>
+
+    <!-- CARD 7 -->
+    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
+        <img src="documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
+        <div class="p-4 text-center">
+            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">SPRING COOKIES</h3>
+            <div class="flex justify-center gap-1 mb-2">
+                <span class="text-gray-300 text-lg">★★★★★</span>
+            </div>
+            <p class="text-gray-800 font-semibold">€29.99</p>
+        </div>
+    </div>
+
+    <!-- CARD 8 -->
+    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
+        <img src="documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
+        <div class="p-4 text-center">
+            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">SPRING COOKIES</h3>
+            <div class="flex justify-center gap-1 mb-2">
+                <span class="text-gray-300 text-lg">★★★★★</span>
+            </div>
+            <p class="text-gray-800 font-semibold">€29.99</p>
+        </div>
+    </div>
+
+</div>
+<!--cards line 2-->
+
+
+<!--footer section from here-->
+
+<footer class="bg-pink-100 text-gray-500 text-center py-6">
+    <p class="text-sm">
+        bla bla bla bla www bla bla bla bla www bla bla bla
+    </p>
+</footer>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+</body>
+</html>
