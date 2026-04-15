@@ -49,6 +49,10 @@
                       <a href="login/index.html"
                          class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Log in</a>
                   </li>
+                  <li>
+                      <a href="#contact"
+                         class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a>
+                  </li>
               </ul>
           </div>
       </div>
@@ -471,41 +475,72 @@ i didnt see the change because I didnt log into the npm-run-dev, this change the
 
 <!-- contact form here-->
 
+<section id="contact" class="pt-16 pb-24 px-6" style="scroll-margin-top: 80px;">
+    <div class="container mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-6">Contact Me</h2>
 
-<!-- white box -->
-<div class="flex items-center justify-center min-h-screen">
-<div class="bg-white p-8 rounded-xl shadow-md w-96" >
+        <div class="flex flex-col md:flex-row gap-10 items-start max-w-5xl mx-auto">
 
-    <!-- Title -->
-    <h2 class="text-6xl font-bold mb-6">Contact Us</h2>
+            <!-- Left: image -->
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img
+                    src="documentation/hand-painted-royal-icing-doll-cookie-with-a-pink-3D-rose.png"
+                    alt="Hand painted royal icing doll cookie with a pink 3D rose"
+                    class="rounded-2xl object-cover shadow-md max-w-full"
+                    width="400"
+                />
+            </div>
 
-    <!-- The form starts here -->
-    <form>
+            <!-- Right: form -->
+            <div class="w-full md:w-1/2">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <form>
+                        <!-- Name: First and Last -->
+                        <label class="block text-gray-700 font-bold text-sm mb-1">Name: <span class="text-pink-400">*</span></label>
+                        <div class="flex flex-col sm:flex-row gap-3 mb-1">
+                            <div class="flex-1">
+                                <input type="text" required
+                                       class="w-full border border-gray-300 p-2 rounded-lg block focus:outline-none focus:border-pink-300"/>
+                                <span class="text-gray-500 text-xs">First</span>
+                            </div>
+                            <div class="flex-1">
+                                <input type="text" required
+                                       class="w-full border border-gray-300 p-2 rounded-lg block focus:outline-none focus:border-pink-300"/>
+                                <span class="text-gray-500 text-xs">Last</span>
+                            </div>
+                        </div>
 
-        <!-- Name field -->
-        <label>Full Name</label>
-        <input type="text" placeholder="Your name"
-               class="w-full border p-2 rounded mb-4 block"/>
+                        <!-- Email field -->
+                        <label class="block text-gray-700 font-bold text-sm mb-1 mt-2">Email: <span class="text-pink-400">*</span></label>
+                        <input type="email" required
+                               class="w-full border border-gray-300 p-2 rounded-lg mb-2 block focus:outline-none focus:border-pink-300"/>
 
-        <!-- Email field -->
-        <label>Email</label>
-        <input type="email" placeholder="Your email"
-               class="w-full border p-2 rounded mb-4 block"/>
+                        <!-- Phone Number field -->
+                        <label class="block text-gray-700 font-bold text-sm mb-1">Phone Number: <span class="text-pink-400">*</span></label>
+                        <input type="tel" required
+                               class="w-full border border-gray-300 p-2 rounded-lg mb-2 block focus:outline-none focus:border-pink-300"/>
 
-        <!-- Message field -->
-        <label>Message</label>
-        <textarea placeholder="Your message"
-                  class="w-full border p-2 rounded mb-4 block"></textarea>
+                        <!-- Date you Need By -->
+                        <label class="block text-gray-700 font-bold text-sm mb-1">Date you Need By: <span class="text-pink-400">*</span></label>
+                        <input type="date" required
+                               class="w-full border border-gray-300 p-2 rounded-lg mb-2 block focus:outline-none focus:border-pink-300"/>
 
-        <!-- Send button -->
-        <button class="bg-pink-300 text-white rounded-full px-6 py-2 text-3xl font-medium hover:bg-pink-400">
-<!--        <button class="bg-pink-300- text-gray-600 w-full p-2 rounded">-->
-            Send Message
-        </button>
+                        <!-- Message field -->
+                        <label class="block text-gray-700 font-bold text-sm mb-1">Message</label>
+                        <textarea placeholder="Your message" rows="3"
+                                  class="w-full border border-gray-300 p-2 rounded-lg mb-3 block focus:outline-none focus:border-pink-300"></textarea>
 
-    </form>
+                        <!-- Submit button -->
+                        <button type="submit" class="bg-pink-300 text-white rounded-full px-8 py-2 text-lg font-medium hover:bg-pink-400">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </div>
-</div>
+</section>
 
 </body>
 
