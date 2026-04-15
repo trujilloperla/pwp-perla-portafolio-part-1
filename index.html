@@ -494,17 +494,17 @@ i didnt see the change because I didnt log into the npm-run-dev, this change the
             <!-- Right: form -->
             <div class="w-full md:w-1/2">
                 <div class="bg-white p-6 rounded-xl shadow-md">
-                    <form>
+                    <form id="contact-form">
                         <!-- Name: First and Last -->
                         <label class="block text-gray-700 font-bold text-sm mb-1">Name: <span class="text-pink-400">*</span></label>
                         <div class="flex flex-col sm:flex-row gap-3 mb-1">
                             <div class="flex-1">
-                                <input type="text" required
+                                <input type="text" name="first_name" required
                                        class="w-full border border-gray-300 p-2 rounded-lg block focus:outline-none focus:border-pink-300"/>
                                 <span class="text-gray-500 text-xs">First</span>
                             </div>
                             <div class="flex-1">
-                                <input type="text" required
+                                <input type="text" name="last_name" required
                                        class="w-full border border-gray-300 p-2 rounded-lg block focus:outline-none focus:border-pink-300"/>
                                 <span class="text-gray-500 text-xs">Last</span>
                             </div>
@@ -512,22 +512,22 @@ i didnt see the change because I didnt log into the npm-run-dev, this change the
 
                         <!-- Email field -->
                         <label class="block text-gray-700 font-bold text-sm mb-1 mt-2">Email: <span class="text-pink-400">*</span></label>
-                        <input type="email" required
+                        <input type="email" name="email" required
                                class="w-full border border-gray-300 p-2 rounded-lg mb-2 block focus:outline-none focus:border-pink-300"/>
 
                         <!-- Phone Number field -->
                         <label class="block text-gray-700 font-bold text-sm mb-1">Phone Number: <span class="text-pink-400">*</span></label>
-                        <input type="tel" required
+                        <input type="tel" name="phone" required
                                class="w-full border border-gray-300 p-2 rounded-lg mb-2 block focus:outline-none focus:border-pink-300"/>
 
                         <!-- Date you Need By -->
                         <label class="block text-gray-700 font-bold text-sm mb-1">Date you Need By: <span class="text-pink-400">*</span></label>
-                        <input type="date" required
+                        <input type="date" name="date_needed" required
                                class="w-full border border-gray-300 p-2 rounded-lg mb-2 block focus:outline-none focus:border-pink-300"/>
 
                         <!-- Message field -->
                         <label class="block text-gray-700 font-bold text-sm mb-1">Message</label>
-                        <textarea placeholder="Your message" rows="3"
+                        <textarea placeholder="Your message" name="message" rows="3"
                                   class="w-full border border-gray-300 p-2 rounded-lg mb-3 block focus:outline-none focus:border-pink-300"></textarea>
 
                         <!-- Submit button -->
@@ -535,6 +535,26 @@ i didnt see the change because I didnt log into the npm-run-dev, this change the
                             Submit
                         </button>
                     </form>
+
+                    <script>
+                        document.getElementById('contact-form').addEventListener('submit', function(e) {
+                            e.preventDefault();
+                            var form = this;
+                            fetch('https://formspree.io/f/xeevejae', {
+                                method: 'POST',
+                                body: new FormData(form),
+                                headers: { 'Accept': 'application/json' }
+                            }).then(function(response) {
+                                if (response.ok) {
+                                    form.reset();
+                                    alert('Thank you! Your message has been sent.');
+                                    window.location.href = '/';
+                                } else {
+                                    alert('Oops! Something went wrong. Please try again.');
+                                }
+                            });
+                        });
+                    </script>
                 </div>
             </div>
 
