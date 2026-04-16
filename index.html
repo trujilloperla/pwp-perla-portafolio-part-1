@@ -157,7 +157,7 @@
 
 <!-- SECTION 1: Start with the Essentials -->
 <section class="py-12 px-4">
-    <div class="container mx-auto">
+    <div class="container mx-auto max-w-7xl">
         <h2 class="text-4xl font-bold text-center text-gray-800 mb-2">Start with the Essentials</h2>
         <p class="text-gray-400 text-xl text-center mb-8">$20 per class — Unlimited access, yours forever.</p>
 
@@ -246,7 +246,7 @@
 
 <!-- SECTION 2: 800+ Tutorials — Monthly Access -->
 <section class="py-12 px-4 bg-gray-50">
-    <div class="container mx-auto">
+    <div class="container mx-auto max-w-7xl">
         <h2 class="text-4xl font-bold text-center text-gray-800 mb-2">800+ Tutorials</h2>
         <p class="text-gray-400 text-xl text-center mb-8">$15.96/month — Access the entire library. Cancel anytime.</p>
 
@@ -518,59 +518,32 @@
 
 
 
-<!--get a free class sample now-->
-
-
-<!-- Left: text -->
-
-<div class="flex-1 text-center px-4">
-    <h1 class="text-3xl md:text-5xl font-bold text-gray-900 text-center mb-8">
-        No ready to enroll yet?? <br/>
-    </h1>
-    <p class="text-gray-500 text-xl md:text-2xl text-center leading-relaxed mb-7">
-        Get a free class to see it you like
-    </p>
-    <div class="flex justify-center">
-        <a href="sample/"
-           class="border border-pink-300 text-pink-300 rounded-full px-6 py-2 text-xl md:text-4xl text-center font-medium hover:bg-pink-50">
-            Free Sample
-        </a>
-    </div>
-</div>
-</div>
-
-
-
-
 <!--about me section starts here-->
 
+<section class="mt-16 px-10">
+    <div class="flex md:flex-row flex-col gap-4 max-w-7xl mx-auto" style="min-height: 450px;">
 
-<section class="py-16 px-10">
-    <div class="flex md:flex-row flex-col gap-10 items-center">
-
-        <!-- Left: photo -->
-        <div class="w-full md:w-5/12 flex justify-center">
-            <img
-                    src="documentation/witch.png"
-                    alt="About me"
-                    class="rounded-2xl object-cover shadow-lg max-w-full"
-                    style="max-height: 500px;"
-            />
+        <!-- Left: text -->
+        <div class="w-full md:w-1/2 bg-pink-100 p-12 flex flex-col justify-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                Meet Peka
+            </h2>
+            <p class="text-gray-600 text-xl leading-relaxed mb-6">
+                I picked up my first piping bag with shaky hands and zero experience — just like you. Every mistake I made became a lesson, and every lesson became a shortcut for my students. Today I'll show you that with the right guidance, you can create cookies so beautiful, people will ask: 'did you really make that?' you will smile and answer. Yes I DID!
+            </p>
+            <a href="sample/"
+               class="bg-pink-300 text-white rounded-full px-6 py-3 text-xl font-medium hover:bg-pink-400 inline-block w-fit">
+                Get your free class today!
+            </a>
         </div>
 
-        <!-- Right: text -->
-        <div class="flex-1">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">
-                Made by a cookie artist — Just like you!
-            </h2>
-            <p class="text-gray-500 text-2xl leading-relaxed mb-9">
-<!--                Hi! I create cookie tutorials designed specifically for beginners; if you don't know where to start, you are in the right place.-->
-                I picked up my first piping bag with shaky hands and zero experience — just like you. Every mistake I made became a lesson, and every lesson became a shortcut for my students. Today I'll show you that with the right guidance, you can create cookies so beautiful, people will ask:  'did you really make that?' you will smile and answer. Yes I DID!
-            </p>
-            <a href="#"
-               class="bg-pink-300 text-white rounded-full px-6 py-2 text-2xl font-medium hover:bg-pink-400">
-                Learn more
-            </a>
+        <!-- Right: photo -->
+        <div class="w-full md:w-1/2">
+            <img
+                src="documentation/about-me.jpg"
+                alt="Peka — Cookie Artist"
+                class="w-full h-full object-cover"
+            />
         </div>
 
     </div>
@@ -578,25 +551,24 @@
 
 <!-- contact form here-->
 
-<section id="contact" class="pt-16 pb-24 px-6" style="scroll-margin-top: 80px;">
-    <div class="container mx-auto">
+<section id="contact" class="pt-16 pb-24 px-10" style="scroll-margin-top: 80px;">
+    <div class="max-w-7xl mx-auto">
         <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-6">Contact Me</h2>
 
-        <div class="flex flex-col md:flex-row gap-10 items-start max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-4">
 
             <!-- Left: image -->
-            <div class="w-full md:w-1/2 flex justify-center">
+            <div class="w-full md:w-1/2">
                 <img
                     src="documentation/hand-painted-royal-icing-doll-cookie-with-a-pink-3D-rose.png"
                     alt="Hand painted royal icing doll cookie with a pink 3D rose"
-                    class="rounded-2xl object-cover shadow-md max-w-full"
-                    width="400"
+                    class="w-full h-full object-cover"
                 />
             </div>
 
             <!-- Right: form -->
             <div class="w-full md:w-1/2">
-                <div class="bg-white p-6 rounded-xl shadow-md">
+                <div class="bg-pink-100 p-6 h-full flex flex-col justify-center">
                     <form id="contact-form">
                         <!-- Name: First and Last -->
                         <label class="block text-gray-700 font-bold text-sm mb-1">Name: <span class="text-pink-400">*</span></label>
