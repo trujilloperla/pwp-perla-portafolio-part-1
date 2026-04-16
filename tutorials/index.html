@@ -50,132 +50,124 @@
 
 
 
-<!-- SEARCH BOX -->
-<div class="text-center py-8 px-4">
-    <input
-            type="text"
-            placeholder="Search tutorial by number... example: 607"
-            class="border border-pink-300 rounded-full px-8 py-4 w-full max-w-4xl text-gray-600 text-2xl  focus:outline-none focus:border-pink-400"
-    />
-</div>
+<!-- Tutorials carousel section -->
+<section class="py-12 px-4">
+    <div class="container mx-auto max-w-7xl">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-2">800+ Tutorials</h2>
+        <p class="text-gray-400 text-xl text-center mb-8">$15.96/month — Access the entire library. Cancel anytime.</p>
 
-
-
-<!-- "I want to add clickable star ratings to my cards but how? -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 container mx-auto p-8">
-
-    <!-- CARD 1 -->
-    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
-        <img src="../documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
-        <div class="p-4 text-center">
-            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">CHRISTMAS FLORAL TREE</h3>
-            <div class="flex justify-center gap-1 mb-2">
-                <span class="text-gray-300 text-lg">★★★★★</span>
-            </div>
-            <p class="text-gray-800 font-semibold">€24.95</p>
+        <!-- Search box -->
+        <div class="text-center mb-8">
+            <input id="tutorials-search" type="text" placeholder="Search tutorial by number... example: 607"
+                   class="border border-pink-300 rounded-full px-6 py-3 w-full max-w-xl text-gray-600 text-lg focus:outline-none focus:border-pink-400" />
         </div>
-    </div>
 
-    <!-- CARD 2 -->
-    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
-        <img src="../documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
-        <div class="p-4 text-center">
-            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">BRIDE OF SPRING</h3>
-            <div class="flex justify-center gap-1 mb-2">
-                <span class="text-gray-300 text-lg">★★★★★</span>
+        <!-- Carousel -->
+        <div class="relative">
+            <!-- Left arrow -->
+            <button onclick="document.getElementById('tutorials-carousel').scrollBy({left: -300, behavior: 'smooth'})"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-pink-300 hover:bg-pink-400 shadow-lg rounded-full w-12 h-12 flex items-center justify-center text-white text-2xl">
+                &#8249;
+            </button>
+
+            <!-- Cards container -->
+            <div id="tutorials-carousel" class="flex gap-6 overflow-x-auto scroll-smooth px-12" style="scrollbar-width: none; -ms-overflow-style: none;">
+
+                <!-- Tutorial 600 -->
+                <a href="../login/" class="flex-shrink-0 border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow bg-white cursor-pointer block" style="min-width: 240px; width: calc((100% - 72px) / 5);">
+                    <img src="../documentation/tutorial-1.png" class="w-full aspect-square object-contain bg-gray-50" alt="Tutorial 600" />
+                    <div class="p-4 text-center">
+                        <span class="bg-pink-300 text-white text-xs font-bold px-3 py-1 rounded-full">VIP Access</span>
+                        <h3 class="text-lg font-bold text-gray-800 mt-3 mb-3">Tutorial 600</h3>
+                        <span class="border border-pink-300 text-pink-300 rounded-full px-4 py-2 text-sm font-medium hover:bg-pink-50 inline-block">Log in to Watch</span>
+                    </div>
+                </a>
+
+                <!-- Tutorial 601 -->
+                <a href="../login/" class="flex-shrink-0 border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow bg-white cursor-pointer block" style="min-width: 240px; width: calc((100% - 72px) / 5);">
+                    <img src="../documentation/tutorial-2.png" class="w-full aspect-square object-contain bg-gray-50" alt="Tutorial 601" />
+                    <div class="p-4 text-center">
+                        <span class="bg-pink-300 text-white text-xs font-bold px-3 py-1 rounded-full">VIP Access</span>
+                        <h3 class="text-lg font-bold text-gray-800 mt-3 mb-3">Tutorial 601</h3>
+                        <span class="border border-pink-300 text-pink-300 rounded-full px-4 py-2 text-sm font-medium hover:bg-pink-50 inline-block">Log in to Watch</span>
+                    </div>
+                </a>
+
+                <!-- Tutorial 602 -->
+                <a href="../login/" class="flex-shrink-0 border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow bg-white cursor-pointer block" style="min-width: 240px; width: calc((100% - 72px) / 5);">
+                    <img src="../documentation/tutorial-3.png" class="w-full aspect-square object-contain bg-gray-50" alt="Tutorial 602" />
+                    <div class="p-4 text-center">
+                        <span class="bg-pink-300 text-white text-xs font-bold px-3 py-1 rounded-full">VIP Access</span>
+                        <h3 class="text-lg font-bold text-gray-800 mt-3 mb-3">Tutorial 602</h3>
+                        <span class="border border-pink-300 text-pink-300 rounded-full px-4 py-2 text-sm font-medium hover:bg-pink-50 inline-block">Log in to Watch</span>
+                    </div>
+                </a>
+
+                <!-- Tutorial 603 -->
+                <a href="../login/" class="flex-shrink-0 border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow bg-white cursor-pointer block" style="min-width: 240px; width: calc((100% - 72px) / 5);">
+                    <img src="../documentation/tutorial-4.png" class="w-full aspect-square object-contain bg-gray-50" alt="Tutorial 603" />
+                    <div class="p-4 text-center">
+                        <span class="bg-pink-300 text-white text-xs font-bold px-3 py-1 rounded-full">VIP Access</span>
+                        <h3 class="text-lg font-bold text-gray-800 mt-3 mb-3">Tutorial 603</h3>
+                        <span class="border border-pink-300 text-pink-300 rounded-full px-4 py-2 text-sm font-medium hover:bg-pink-50 inline-block">Log in to Watch</span>
+                    </div>
+                </a>
+
+                <!-- Tutorial 604 -->
+                <a href="../login/" class="flex-shrink-0 border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow bg-white cursor-pointer block" style="min-width: 240px; width: calc((100% - 72px) / 5);">
+                    <img src="../documentation/tutorial-5.png" class="w-full aspect-square object-contain bg-gray-50" alt="Tutorial 604" />
+                    <div class="p-4 text-center">
+                        <span class="bg-pink-300 text-white text-xs font-bold px-3 py-1 rounded-full">VIP Access</span>
+                        <h3 class="text-lg font-bold text-gray-800 mt-3 mb-3">Tutorial 604</h3>
+                        <span class="border border-pink-300 text-pink-300 rounded-full px-4 py-2 text-sm font-medium hover:bg-pink-50 inline-block">Log in to Watch</span>
+                    </div>
+                </a>
+
+                <!-- Tutorial 605 -->
+                <a href="../login/" class="flex-shrink-0 border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow bg-white cursor-pointer block" style="min-width: 240px; width: calc((100% - 72px) / 5);">
+                    <img src="../documentation/tutorial-6.png" class="w-full aspect-square object-contain bg-gray-50" alt="Tutorial 605" />
+                    <div class="p-4 text-center">
+                        <span class="bg-pink-300 text-white text-xs font-bold px-3 py-1 rounded-full">VIP Access</span>
+                        <h3 class="text-lg font-bold text-gray-800 mt-3 mb-3">Tutorial 605</h3>
+                        <span class="border border-pink-300 text-pink-300 rounded-full px-4 py-2 text-sm font-medium hover:bg-pink-50 inline-block">Log in to Watch</span>
+                    </div>
+                </a>
+
             </div>
-            <p class="text-gray-800 font-semibold">€19.99</p>
+
+            <!-- Right arrow -->
+            <button onclick="document.getElementById('tutorials-carousel').scrollBy({left: 300, behavior: 'smooth'})"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-pink-300 hover:bg-pink-400 shadow-lg rounded-full w-12 h-12 flex items-center justify-center text-white text-2xl">
+                &#8250;
+            </button>
         </div>
+
     </div>
-
-    <!-- CARD 3 -->
-    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
-        <img src="../documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
-        <div class="p-4 text-center">
-            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">SPRING COOKIES</h3>
-            <div class="flex justify-center gap-1 mb-2">
-                <span class="text-gray-300 text-lg">★★★★★</span>
-            </div>
-            <p class="text-gray-800 font-semibold">€29.99</p>
-        </div>
-    </div>
-
-    <!-- CARD 4 -->
-    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
-        <img src="../documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
-        <div class="p-4 text-center">
-            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">COOKIE DOLLS</h3>
-            <div class="flex justify-center gap-1 mb-2">
-                <span class="text-gray-300 text-lg">★★★★★</span>
-            </div>
-            <p class="text-gray-800 font-semibold">€39.99</p>
-        </div>
-    </div>
-
-    <!-- CARD 5 -->
-    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
-        <img src="../documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
-        <div class="p-4 text-center">
-            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">SPRING COOKIES</h3>
-            <div class="flex justify-center gap-1 mb-2">
-                <span class="text-gray-300 text-lg">★★★★★</span>
-            </div>
-            <p class="text-gray-800 font-semibold">€29.99</p>
-        </div>
-    </div>
-
-    <!-- CARD 6 -->
-    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
-        <img src="../documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
-        <div class="p-4 text-center">
-            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">SPRING COOKIES</h3>
-            <div class="flex justify-center gap-1 mb-2">
-                <span class="text-gray-300 text-lg">★★★★★</span>
-            </div>
-            <p class="text-gray-800 font-semibold">€29.99</p>
-        </div>
-    </div>
-
-    <!-- CARD 7 -->
-    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
-        <img src="../documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
-        <div class="p-4 text-center">
-            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">SPRING COOKIES</h3>
-            <div class="flex justify-center gap-1 mb-2">
-                <span class="text-gray-300 text-lg">★★★★★</span>
-            </div>
-            <p class="text-gray-800 font-semibold">€29.99</p>
-        </div>
-    </div>
-
-    <!-- CARD 8 -->
-    <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200">
-        <img src="../documentation/witch.png" class="w-full h-64 object-cover" alt="Cookie Tutorial">
-        <div class="p-4 text-center">
-            <h3 class="text-sm font-bold text-gray-800 uppercase mb-2">SPRING COOKIES</h3>
-            <div class="flex justify-center gap-1 mb-2">
-                <span class="text-gray-300 text-lg">★★★★★</span>
-            </div>
-            <p class="text-gray-800 font-semibold">€29.99</p>
-        </div>
-    </div>
-
-</div>
-<!--cards line 2-->
-
-
-
-
+</section>
 
 <!--footer section from here-->
 
 <footer class="bg-pink-100 text-gray-500 text-center py-6">
-    <p class="text-sm">
-        <li>
-            Pekascookies - Copyright 2026
-<li></p>
+    <p class="text-xl">
+        Pekascookies - Copyright 2026
+    </p>
 </footer>
 
+<!-- Search filter -->
+<script>
+    var input = document.getElementById('tutorials-search');
+    var carousel = document.getElementById('tutorials-carousel');
+    if (input && carousel) {
+        input.addEventListener('input', function() {
+            var query = this.value.toLowerCase();
+            var cards = carousel.children;
+            for (var i = 0; i < cards.length; i++) {
+                var text = cards[i].textContent.toLowerCase();
+                cards[i].style.display = text.includes(query) ? '' : 'none';
+            }
+        });
+    }
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
 
 
